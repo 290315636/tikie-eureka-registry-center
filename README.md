@@ -1,7 +1,7 @@
 # spring-cloud
 spring cloud全家桶，各个组件整合使用
 
-## spring eureka 注册中心
+## spring eureka 注册中心(基础)
 
 ### 参考网站
  + 相关学习博客，请查看[相关学习文档](https://www.cnblogs.com/cralor/p/9223994.html "spring boot 2.0.3+spring cloud （Finchley）1、搭建服务注册和发现组件Eureka 以及构建高可用Eureka Server集群")
@@ -61,7 +61,7 @@ spring cloud全家桶，各个组件整合使用
  
 ### 其他相关项目
 
-    1. eureka 服务提供者(可以有多个实例) 
+    1. eureka服务提供者(可以有多个实例) > https://github.com/290315636/tikie-eureka-provider
  
 ### 历史更新
 

@@ -28,11 +28,22 @@ spring cloud全家桶，各个组件整合使用
         127.0.0.1           peer1
         127.0.0.1           peer2
  
- + 运行注册中心：TikieEurekaServerApplication.java
+ + 运行主注册中心：TikieEurekaServerApplication.java
     
         Run As
-        Java Application或Spring Boot App
- + 注册中心页面主节点：http://peer1:8761/
+        Run Configurations...
+        Spring Boot > Profile > *peer1* > Run
+   
+ + 运行副注册中心：TikieEurekaServerApplication.java
+    
+        Run As
+        Run Configurations...
+        Spring Boot > Profile > *peer2* > Run
+ + 或命令行启动方式：
+ 
+        java -jar eureka-server-0.0.1-SNAPSHOT.jar --spring.profiles.active=peer1
+        java -jar eureka-server-0.0.1-SNAPSHOT.jar --spring.profiles.active=peer2
+ + 注册中心页面主节点：http://peer1:8761/tikie-eureka-registry-center-0.0.1-SNAPSHOTtikie-eureka-registry-center-0.0.1-SNAPSHOT
  + 注册中心页面副节点：http://peer2:8761/
  
  + *本项目的默认只提供dev分支的更新权限*
@@ -44,6 +55,13 @@ spring cloud全家桶，各个组件整合使用
        
        #在对应的分支上执行：如dev分支
        git branch --set-upstream-to=origin/dev
+ + 注 
+ 
+       主、副注册中心启动时会相互寻找，会报错，都起来后不会报错
+ 
+### 其他相关项目
+
+    1. eureka 服务提供者(可以有多个实例) 
  
 ### 历史更新
 

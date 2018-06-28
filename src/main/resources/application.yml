@@ -1,0 +1,8 @@
+spring:
+  profiles:
+    active: native
+  application:
+    name: peer-cluster
+  output:
+    ansi:
+      enabled: ALWAYS   #控制台彩色输出

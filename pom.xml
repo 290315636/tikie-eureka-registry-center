@@ -65,8 +65,17 @@
 		</plugins>
 	</build>
 
-    <!--使用aliyun镜像-->
     <repositories>
+        <repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/milestone</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        
+        <!--使用aliyun镜像-->
         <repository>
             <id>alimaven</id>
             <name>Maven Aliyun Mirror</name>
@@ -78,7 +87,7 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
+        
     </repositories>
     
-
 </project>

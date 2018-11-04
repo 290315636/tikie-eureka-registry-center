@@ -1,0 +1,8 @@
+server:
+  port: 8761
+eureka:
+  instance:
+    hostname: center1
+  client:
+    serviceUrl:
+      defaultZone: http://center1.tikie.top:8761/eureka/

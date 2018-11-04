@@ -1,8 +1,8 @@
 spring:
   profiles:
-    active: native
+    active: center1
   application:
-    name: peer-cluster
+    name: center-cluster
   output:
     ansi:
       enabled: ALWAYS   #控制台彩色输出
